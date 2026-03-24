@@ -19,12 +19,6 @@ README.md
 # Test sources/resources are not needed in deploy slug.
 src/test/
 
-# Maven build output not needed at runtime except the final fat WAR.
-target/ROOT.war.original
-target/ROOT/
-target/war/
-target/test-classes/
-target/generated-sources/
-target/generated-test-sources/
-target/maven-archiver/
-target/maven-status/
+# Maven build output: keep only the final runtime artifact.
+target/*
+!target/ROOT.war
