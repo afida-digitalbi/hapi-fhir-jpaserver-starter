@@ -1,0 +1,20 @@
+# Keep Heroku slug small by excluding files not needed
+# to build/run the app in production.
+.github/
+.vscode/
+charts/
+configs/
+custom/
+docker-compose.yml
+Dockerfile
+build-docker-image.sh
+build-docker-image.bat
+docker-build.bat
+server.xml
+catalina.properties
+LICENSE
+README.md
+.travis.yml
+
+# Test sources/resources are not needed in deploy slug.
+src/test/
